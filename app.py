@@ -13,6 +13,7 @@ def clean_data():
 	for player in players_copy:
 		height_int, inches = player['height'].split(" ")
 		height_int = int(height_int)
+		player['height'] = height_int
 		
 	#to turn experience into boolean and seperate players by experience
 	for player in players_copy:
