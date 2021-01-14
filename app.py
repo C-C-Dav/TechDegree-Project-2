@@ -19,10 +19,10 @@ def clean_data():
 	#to turn experience into boolean and seperate players by experience
     for player in players_copy:
         if player['experience'] == 'YES':
-            player['experience'] = "True"
+            player['experience'] = True
             exp_players.append(player)
         elif player['experience'] == "NO":
-            player['experience'] = "False"
+            player['experience'] = False
             inexp_players.append(player)
 				
 	#to split guardians to remove "and"
@@ -64,7 +64,7 @@ def team_menu():
     except ValueError:
         print("Oh no! That's not a valid number.")
     else:
-        if team_choice < 1 or team_choice > 2:
+        if team_choice < 1 or team_choice > 3:
             print("Oh no! That's not a valid number.")
         elif team_choice == 1:
             print_stats("Panthers", teams_copy[0])
