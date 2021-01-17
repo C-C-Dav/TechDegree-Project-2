@@ -72,7 +72,7 @@ def team_menu():
             print_stats("Bandits", teams_copy[1])
         elif team_choice == 3:
             print_stats("Warriors", teams_copy[2])
-        continue_selection = input("Press any key to continue...  ")
+        continue_selection = input("Press Enter to continue...  ")
     
 
 def start_menu():
